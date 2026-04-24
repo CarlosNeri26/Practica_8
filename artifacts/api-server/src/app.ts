@@ -48,4 +48,4 @@ app.get("/", (req, res) => {
 app.use("/api", router);
 
 export default app;
-//Erorr de sintaxis
+//Erorr de sintaxis public
