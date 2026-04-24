@@ -1,5 +1,6 @@
 import express, { type Express } from "express";
 import cors from "cors";
+import path from "path";
 import * as pinoHttpModule from "pino-http";
 import router from "./routes/index.js";
 import { logger } from "./lib/logger.js";
@@ -31,7 +32,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static("public"));
+app.use(express.static(path.join(process.cwd(), "public")));
 
 app.use("/api", router);
 
