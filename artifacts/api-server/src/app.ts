@@ -1,9 +1,12 @@
 import express, { type Express } from "express";
 import cors from "cors";
 import * as pinoHttpModule from "pino-http";
-import router from "./routes/index.js";
-import { logger } from "./lib/logger";
 
+// ¡Aquí están las dos extensiones .js clave para Vercel!
+import router from "./routes/index.js";
+import { logger } from "./lib/logger.js";
+
+// Forzamos el tipado para evitar el error TS2349
 const pinoHttp = (pinoHttpModule as any).default || pinoHttpModule;
 
 const app: Express = express();
@@ -35,4 +38,4 @@ app.use("/api", router);
 
 export default app;
 
-//Correcion
+//corregir logger
