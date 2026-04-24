@@ -146,4 +146,42 @@
   // -----------------------------
   const yearEl = document.getElementById("currentYear");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  // -----------------------------
+  // Header compacto al hacer scroll
+  // -----------------------------
+  const header = document.querySelector(".site-header");
+  if (header) {
+    const updateHeader = function () {
+      header.classList.toggle("is-scrolled", window.scrollY > 24);
+    };
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+  }
+
+  // -----------------------------
+  // Scroll-reveal con IntersectionObserver
+  // -----------------------------
+  const revealEls = document.querySelectorAll(".reveal");
+  if (revealEls.length && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+    );
+    revealEls.forEach(function (el) {
+      observer.observe(el);
+    });
+  } else {
+    // Fallback: si no hay soporte, mostramos todo de una vez.
+    revealEls.forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+  }
 })();
