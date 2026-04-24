@@ -25,3 +25,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Artifacts
+
+- `artifacts/cafeteria-flor-cordoba` — Landing page para "Cafetería La Flor de Córdoba" (Guadalajara). Sitio estático escrito en HTML/CSS/JS puros (`index.html`, `styles.css`, `script.js`) servido por Vite. Incluye header con navegación, hero, sección "Sobre nosotros / Instalaciones" con `<img>` reemplazable (foto del local de Google Maps), formulario de contacto con validación JS y footer con `<img class="logo">` y el crédito "Desarrollado por Carlos Emmanuel Neri Saldivar".

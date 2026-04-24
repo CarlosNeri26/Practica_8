@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafetería La Flor de Córdoba | Guadalajara</title>
+    <meta name="description" content="Cafetería La Flor de Córdoba: el sabor del café tradicional en el corazón de Guadalajara. Visítanos y disfruta de un ambiente cálido y acogedor." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#inicio" class="brand">
+          <span class="brand-mark">☕</span>
+          <span class="brand-text">
+            <span class="brand-title">La Flor de Córdoba</span>
+            <span class="brand-subtitle">Cafetería · Guadalajara</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#instalaciones">Instalaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========== HERO ========== -->
+      <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Tradición cafetera desde el corazón de Guadalajara</p>
+          <h1>Donde cada taza cuenta una historia</h1>
+          <p class="hero-lead">
+            En <strong>Cafetería La Flor de Córdoba</strong> servimos café artesanal,
+            repostería casera y un ambiente cálido pensado para hacer una pausa,
+            charlar o simplemente disfrutar.
+          </p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">Reservar una mesa</a>
+            <a href="#instalaciones" class="btn btn-ghost">Conoce el local</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SOBRE NOSOTROS / INSTALACIONES ========== -->
+      <section id="nosotros" class="about">
+        <div class="container about-grid">
+          <div class="about-image" id="instalaciones">
+            <!--
+              Reemplaza el src de esta imagen por una foto real
+              del local extraída de Google Maps.
+            -->
+            <img
+              src="https://via.placeholder.com/800x600?text=Foto+del+local+(Google+Maps)"
+              alt="Fachada e instalaciones de Cafetería La Flor de Córdoba en Guadalajara"
+              class="facility-photo"
+            />
+            <span class="image-caption">Nuestro local en Guadalajara</span>
+          </div>
+
+          <div class="about-text">
+            <p class="eyebrow">Sobre nosotros</p>
+            <h2>Un rincón hecho para los amantes del buen café</h2>
+            <p>
+              La Flor de Córdoba nació con el sueño de compartir el verdadero
+              sabor del café mexicano. Trabajamos con granos seleccionados de
+              productores locales y los preparamos con técnicas tradicionales
+              que respetan su aroma y carácter.
+            </p>
+            <p>
+              Nuestras instalaciones combinan la calidez de una cafetería de
+              barrio con un diseño moderno y luminoso. Es el lugar perfecto
+              para una mañana tranquila, una junta de trabajo o una tarde con
+              amigos.
+            </p>
+
+            <ul class="features">
+              <li>
+                <span class="feature-icon">🌱</span>
+                <div>
+                  <h3>Café de origen</h3>
+                  <p>Granos seleccionados de productores mexicanos.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-icon">🥐</span>
+                <div>
+                  <h3>Repostería casera</h3>
+                  <p>Pan dulce y postres horneados cada mañana.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-icon">📶</span>
+                <div>
+                  <h3>Espacio para trabajar</h3>
+                  <p>Wi-Fi gratuito y mesas amplias para tu laptop.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACTO ========== -->
+      <section id="contacto" class="contact">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <p class="eyebrow">Contacto</p>
+            <h2>Escríbenos o visítanos</h2>
+            <p>
+              ¿Quieres reservar, organizar un evento o simplemente saludarnos?
+              Llena el formulario y te responderemos lo antes posible.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <strong>Dirección</strong>
+                <span>Guadalajara, Jalisco, México</span>
+              </li>
+              <li>
+                <strong>Horario</strong>
+                <span>Lun a Sáb · 7:00 — 21:00</span>
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                <span>+52 33 0000 0000</span>
+              </li>
+              <li>
+                <strong>Correo</strong>
+                <span>hola@laflordecordoba.mx</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre completo"
+                required
+              />
+              <small class="error-message" data-error-for="nombre"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="correo">Correo electrónico</label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="tucorreo@ejemplo.com"
+                required
+              />
+              <small class="error-message" data-error-for="correo"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="¿En qué podemos ayudarte?"
+                required
+              ></textarea>
+              <small class="error-message" data-error-for="mensaje"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Enviar mensaje
+            </button>
+
+            <p class="form-feedback" id="formFeedback" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <!--
+          Inserta aquí el logotipo modificando el atributo src.
+        -->
+        <img
+          src="https://via.placeholder.com/120x120?text=LOGO"
+          alt="Logotipo de Cafetería La Flor de Córdoba"
+          class="logo"
+        />
+        <p class="footer-credit">Desarrollado por Carlos Emmanuel Neri Saldivar</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
