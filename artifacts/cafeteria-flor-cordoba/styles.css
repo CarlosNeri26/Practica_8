@@ -493,12 +493,12 @@ p {
 }
 
 .logo {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  object-fit: cover;
+  height: 80px;
+  width: auto;
+  object-fit: contain;
   background-color: #fff;
-  padding: 4px;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
 }
 
 .footer-credit {
